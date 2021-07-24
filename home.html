@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Homepage</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <style>
+     .container .btn {
+  
+  transform: translate(-100%, -100%);
+  padding: 16px 30px;
+  
+  text-align: center;
+}
+
+.logo .fa {
+  color: red;
+}
+
+
+    
+    </style>
+
+
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <div >
+      <div class="logo" style="font-size: 100px;">
+      <i class="fa fa-shopping-bag fa-10x" aria-hidden="true"></i>
+      </div>
+
+    </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="nav justify-content-center">
+      <li class="nav-item ">
+        <a class="nav-link" href="#"><h4><b><strong>Home </strong></b></h4><span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" width=100px>
+          <b><strong style="font-size:24px">Catagories</strong></b>
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="women"><strong>Women's clothing</strong></a>
+          <a class="dropdown-item" href="men"><strong>Men's clothing</strong></a>
+          <a class="dropdown-item" href="kids"><strong>Kid's clothing</strong></a>
+        </div>
+      </li>
+      <li class="nav-item ative">
+        <a class="nav-link" href="chooseus"><h4><b><strong>Why choose us</strong></b></h4></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="contact" tabindex="-1" ><h4><b><strong>Contact us</strong></b></h4></a>
+      </li>
+      </div>
+    </ul>
+    <div>
+    <a class="nav-link" href="register">
+      <button type="button" class="btn btn-primary">REGISTER</button>
+    </a>
+    </div>
+    <div>
+    <a class="nav-link" href="login">
+      <button type="button" class="btn btn-danger">LOGIN</button>
+    </a>
+
+    </div>
+
+    {% if session %}
+      <h1 style="color:red;">Hi, {{session.user}}! </h1>
+      
+     {% endif %}
+    
+    <div style="font-size: 100px;">
+    <a class="nav-link" href="#">
+    <i class="fa fa-shopping-cart " aria-hidden="true"></i>
+    </a>
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- slider Area Start -->
+<div class="card">
+        <div class="slider-area bg-warning ">
+            <!-- Mobile Menu -->
+            <div class="slider-active">
+                <div class="single-slider slider-height" data-background="../static/images/main.png">
+                    <div class="container">
+                        <div class="row d-flex align-items-center justify-content-between">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block ">
+                                    <img src="../static/images/main.png" alt="">
+                                    <div class="container">
+                                    <h2><strong>Men-casual fit</strong></h2>
+
+
+                                    <figcaption><h3><strong><i class="fa fa-inr" aria-hidden="true"></i>5000</strong></h3></figcaption>
+                                    
+
+                                    </div>
+                                    <div>
+                                      <button class="btn  btn-success"> <strong>Add to Cart</strong></button>
+
+                                    </div>
+                                   
+                                </div>
+
+                                
+
+                                  <div class="card bg-dark text-white">
+                                   <div >
+      <div class="logo" style="font-size: 400px;">
+      <i class="fa fa-shopping-bag fa-10x" aria-hidden="true"></i>
+      </div>
+
+    </div>
+  <div class="card-img-overlay">
+  <center>
+    <h1 class="card-title"><strong><i>LUXURY MALL</i></strong></h1>
+  </center>
+  </div>
+</div>
+        
+
+                            
+                           
+                            </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+
+    
+
+
+
+<!-- slider Area Start -->
+<div class="card">
+        <div class="slider-area bg-info ">
+            <!-- Mobile Menu -->
+            <div class="slider-active">
+                <div class="single-slider slider-height" data-background="../static/images/home.png">
+                    <div class="container">
+                        <div class="row d-flex align-items-center justify-content-between">
+                            <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block ">
+                                    <img src="../static/images/home.png" alt="">
+                                    <div class="container">
+                                    <h2><strong>Woolen costume-set</strong></h2>
+                                    <figcaption><h3><strong><i class="fa fa-inr" aria-hidden="true"></i>6000</strong></h3></figcaption>
+
+
+                                    </div>
+                                    <div>        
+                                    <button class="btn  btn-success"> <strong>Add to Cart</strong></button>
+                                    </div>
+
+                                </div>
+                                
+        <div class="slider-area bg-dark ">
+            <!-- Mobile Menu -->
+            <div class="slider-active">
+                <div class="single-slider slider-height">
+                                 <div class="container">
+                        <div class="row d-flex align-items-right justify-content-between">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
+                                    <img src="../static/images/home0.png" alt="">
+                                </div>
+                            </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div>
+                
+
+<div class="row row-cols-1 row-cols-md-3">
+     
+     <div class="col mb-4">
+    <div class="card">
+            <img src="..\static\images\home1.jpeg" class="rounded float-left img-thumbnail" alt="error" width="500" height="600">
+
+      <div class="card-body">
+              <center>
+
+        <h5 class="card-title"><b>Casual wear-printed</b></h5>
+                      <button type="button" class="btn btn-success">Add to Cart</button>
+                      <hr>
+              <figcaption><h3><strong><i class="fa fa-inr" aria-hidden="true"></i>6000</strong></h3></figcaption>
+                                    </center>
+
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card">
+            <img src="..\static\images\home3.jpeg" class="rounded float-left img-thumbnail" alt="error" width="500" height="600">
+
+      <div class="card-body">
+              <center>
+
+        <h5 class="card-title"><b>Cotton Silk-Kurta</b></h5>
+                      <button type="button" class="btn btn-success">Add to Cart</button>
+                      <hr>
+              <figcaption><h3><strong><i class="fa fa-inr" aria-hidden="true"></i>7000</strong></h3></figcaption>
+                                    </center>
+
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+
+<div class="col mb-4">
+    <div class="card">
+            <img src="..\static\images\home2.jpeg" class="rounded float-left img-thumbnail" alt="error" width="500" height="600">
+
+      <div class="card-body">
+              <center>
+
+        <h5 class="card-title"><b>Casual wear-plain</b></h5>
+                      <button type="button" class="btn btn-success">Add to Cart</button>
+                      <hr>
+              <figcaption><h3><strong><i class="fa fa-inr" aria-hidden="true"></i>6000</strong></h3></figcaption>
+                                    </center>
+
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+
+
+  <div>
+                
+
+<div class="row row-cols-1 row-cols-md-3">
+     
+     <div class="col mb-4">
+    <div class="card">
+            <img src="..\static\images\home4.jpeg" class="rounded float-left img-thumbnail" alt="error" width="500" height="600">
+
+      <div class="card-body">
+              <center>
+
+        <h5 class="card-title"><b>Pure cotton-Straight kurta</b></h5>
+                      <button type="button" class="btn btn-success">Add to Cart</button>
+                      <hr>
+              <figcaption><h3><strong><i class="fa fa-inr" aria-hidden="true"></i>4500</strong></h3></figcaption>
+                                    </center>
+
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card">
+            <img src="..\static\images\home5.jpeg" class="rounded float-left img-thumbnail" alt="error" width="500" height="600">
+
+      <div class="card-body">
+              <center>
+
+        <h5 class="card-title"><b>Sleeveless kurta </b></h5>
+                      <button type="button" class="btn btn-success">Add to Cart</button>
+                      <hr>
+              <figcaption><h3><strong><i class="fa fa-inr" aria-hidden="true"></i>5000</strong></h3></figcaption>
+                                    </center>
+
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+
+<div class="col mb-4">
+    <div class="card">
+            <img src="..\static\images\home6.jpeg" class="rounded float-left img-thumbnail" alt="error" width="500" height="600">
+
+      <div class="card-body">
+              <center>
+
+        <h5 class="card-title"><b>Printed cotton-kurta </b></h5>
+                      <button type="button" class="btn btn-success">Add to Cart</button>
+                      <hr>
+              <figcaption><h3><strong><i class="fa fa-inr" aria-hidden="true"></i>4000</strong></h3></figcaption>
+                                    </center>
+
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+
+  <!--services-->
+    <div class="agileits-services bg-primary" id="services">
+        <div class="no-gutters agileits-services-row row">
+            <div class="col-lg-3 col-sm-6 agileits-services-grids p-sm-5 p-3 bg-info">
+             <div class="logo" style="font-size: 100px;">
+            <i class="fa fa-refresh" aria-hidden="true"></i>
+            </div>
+
+                <h4 class="mt-2 mb-3">30 days replacement</h4>
+            </div>
+            <div class="col-lg-3 col-sm-6 agileits-services-grids p-sm-5 p-3">
+             <div class="logo" style="font-size: 100px;">
+            <i class="fa fa-gift" aria-hidden="true"></i>
+            </div>
+
+                <h4 class="mt-2 mb-3">Gift Card</h4>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 agileits-services-grids p-sm-5 p-3 bg-info">
+            <div class="logo" style="font-size: 100px;">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+
+
+            </div>
+                <h4 class="mt-2 mb-3">Secure payments</h4>
+            </div>
+            <div class="col-lg-3 col-sm-6 agileits-services-grids p-sm-5 p-3">
+            <div class="logo" style="font-size: 100px;">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+
+            <div>
+                
+                <h4 class="mt-2 mb-3">Free shipping</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- //services-->
+    <div>
+
+    <!-- //footer-top -->
+    
+  <div class=" col-12 agileits-services-grids p-sm-5 p-5 bg-dark">
+
+
+    <div class="logo">
+			<div class="container">
+				<div class="social-links" style="font-size: 30px";>
+        <div>
+        <center>
+          <h2  style="color:#069"><i><strong>FOLLOW US</strong></i></h2>
+        </center>
+        <center>
+					<a href="#" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
+					<a href="#" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
+					<a href="#" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
+					<a href="#" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
+					<a href="#" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
+					<a href="#" class="tumblr"><i class="fa fa-whatsapp" aria-hidden="true"></i><span>whatsapp</span>
+          </center>
+				</div>
+        </div>
+  </body>
+</html>
