@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	font-size: large;
+	font-weight: bolder;
+	color: #003638;
+}
+a:hover {
+	color: red;
+}
+.navbar {
+	top: 0;
+	position: sticky;
+	display: flex;
+	gap: 10px;
+	background: #f9fafc;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.navbar__brand h2 {
+	margin-top: 25px;
+	margin-left: 15px;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-size: 30px;
+	color: #511281;
+}
+.nav__items {
+	display: flex;
+	margin-top: 30px;
+	gap: 50px;
+	margin-left: 40px;
+}
+.navbar__items {
+	margin-left: 50px;
+}
+.button__primary {
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	font-size: large;
+	margin-bottom: 15px;
+}
+
+.button__primary {
+	background-image: linear-gradient(to right, #511281 50%, #1a2980 50%);
+}
+
+.trending {
+	margin-left: 150px;
+}
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.home__image__container {
+	display: flex;
+}
+.image1 {
+	height: 600px;
+	width: 600px;
+}
+.image2,
+.image3,
+.image4 {
+	height: 500px;
+	width: 300px;
+	padding-top: 100px;
+}
+.side__image {
+	display: flex;
+}
+.image5,
+.image6,
+.image7 {
+	height: 700px;
+	width: 490px;
+}
+.container1 {
+	padding: 20px;
+	display: flex;
+	gap: 20px;
+}
+.button__one,
+.button__two {
+	padding: 10px;
+	cursor: pointer;
+}
